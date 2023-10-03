@@ -17,7 +17,7 @@ const UsersPage = async () => {
 	const notion = new Client({ auth: process.env.NOTION_API_KEY });
 	
 	(async () => {
-	  const pageId = 'Bible-Verse-fe3ee4c49a3e47869d489a3450077fd7';
+	  const pageId = 'fe3ee4c49a3e47869d489a3450077fd7';
 	  const response = await notion.pages.retrieve({ page_id: pageId });
 	  console.log(response);
 	})();
